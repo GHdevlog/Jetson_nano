@@ -16,9 +16,9 @@ if __name__ == "__main__":
     g.setup(SEL_A, g.OUT, initial=g.LOW)
     g.setup(SEL_B, g.OUT, initial=g.LOW)
 
-    # TTL 설정
+    # TRS232 설정
     g.output(SEL_A, 0)
-    g.output(SEL_B, 0)
+    g.output(SEL_B, 1)
     
     # 시리얼 포트 설정
     serial_port = serial.Serial('/dev/ttyTHS1', 9600, timeout=1)  # timeout을 1로 설정
